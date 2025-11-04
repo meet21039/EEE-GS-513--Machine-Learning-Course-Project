@@ -16,7 +16,24 @@ This work was done as part of the **EEE-GS-513 Machine Learning Course Project**
 
 ## 📂 Project Structure
 
-
+BrainMRI-Classification/
+│
+├── data_pipeline/
+│ └── preprocess.py # dataset loading & preprocessing functions
+│
+├── models/
+│ └── final_mri_model.keras # trained model saved in Keras 3 format
+│
+├── notebooks/
+│ └── BrainMRI_Classification.ipynb # main Colab notebook
+│
+├── results/
+│ ├── accuracy_loss_plot.png
+│ ├── confusion_matrix.png
+│ └── classification_report.txt
+│
+├── requirements.txt # dependencies
+└── README.md # project overview
 ---
 
 ## 🚀 Project Overview
