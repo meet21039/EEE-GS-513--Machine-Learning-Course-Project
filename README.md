@@ -16,3 +16,50 @@ This work was done as part of the **EEE-GS-513 Machine Learning Course Project**
 
 ## 📂 Project Structure
 
+
+---
+
+## 🚀 Project Overview
+
+### 🎯 Objective
+To automatically classify MRI brain scans into four categories using deep learning techniques, improving accuracy and efficiency in tumor detection.
+
+### 💡 Methodology
+1. **Dataset Preparation**
+   - Organized MRI scans into folders: `glioma/`, `meningioma/`, `pituitary/`, `no_tumor/`.
+   - Split into training and testing sets.
+   - Applied normalization and data augmentation (rotation, flip, zoom).
+
+2. **Model Architecture**
+   - Baseline CNN with multiple convolutional + pooling layers.
+   - Trained using **Adam optimizer** and **categorical cross-entropy loss**.
+   - Metrics: Accuracy, AUC (Area Under Curve).
+
+3. **Training & Evaluation**
+   - Trained on Google Colab using GPU runtime.
+   - Early stopping and checkpointing used for best model retention.
+   - Evaluated using confusion matrix, ROC AUC, and classification report.
+
+---
+
+## 📊 Results
+
+| Metric | Value |
+|---------|-------|
+| Accuracy | 0.93 |
+| ROC AUC  | 0.96 |
+| Loss     | 0.21 |
+
+### Confusion Matrix
+![Confusion Matrix](results/confusion_matrix.png)
+
+---
+
+## 🧩 How to Run
+
+### 🖥️ In Google Colab
+1. Clone this repository:
+   ```bash
+   !git clone https://github.com/meet21039/EEE-GS-513-Machine--Learning-Course-Project.git
+   %cd EEE-GS-513-Machine--Learning-Course-Project
+
