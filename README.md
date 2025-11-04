@@ -28,7 +28,6 @@ To automatically classify MRI brain scans into four categories using deep learni
 
 2. **Model Architecture**
    - Baseline CNN with multiple convolutional + pooling layers.
-   - Trained using **Adam optimizer** and **categorical cross-entropy loss**.
    - Metrics: Accuracy, AUC (Area Under Curve).
 
 3. **Training & Evaluation**
@@ -36,26 +35,39 @@ To automatically classify MRI brain scans into four categories using deep learni
    - Early stopping and checkpointing used for best model retention.
    - Evaluated using confusion matrix, ROC AUC, and classification report.
 
----
+# 🩻 X-Ray Image Classification using CNN
 
-## 📊 Results
+This project focuses on classifying **medical X-ray images** into categories (such as *Normal*, *Pneumonia*, or *Fracture*) using **Convolutional Neural Networks (CNNs)**.
 
-| Metric | Value |
-|---------|-------|
-| Accuracy | 0.93 |
-| ROC AUC  | 0.96 |
-| Loss     | 0.21 |
+The model automates disease detection from X-rays to assist radiologists in preliminary screening and faster diagnosis.
 
-### Confusion Matrix
-![Confusion Matrix](results/confusion_matrix.png)
+This work was developed as part of the **EEE-GS-513 Machine Learning Course Project**.
 
 ---
 
-## 🧩 How to Run
+---
 
-### 🖥️ In Google Colab
-1. Clone this repository:
-   ```bash
-   !git clone https://github.com/meet21039/EEE-GS-513-Machine--Learning-Course-Project.git
-   %cd EEE-GS-513-Machine--Learning-Course-Project
+## 🚀 Project Overview
+
+### 🎯 Objective
+To classify X-ray images into medical categories using deep learning techniques for assisting medical professionals in diagnosis.
+
+### 💡 Methodology
+1. **Dataset Preparation**
+   - X-ray images organized into folders (e.g. `Normal/`, `Fracture/`).
+   - Split into training and testing sets.
+   - Preprocessing steps include resizing, normalization, and data augmentation (rotation, zoom, flip).
+
+2. **Model Architecture**
+   - A custom **CNN** built from scratch using TensorFlow/Keras.
+   - Multiple convolution and pooling layers followed by dense layers.
+
+3. **Training & Evaluation**
+   - Training done on Google Colab GPU.
+   - Used **EarlyStopping** and **ModelCheckpoint** for efficient training.
+   - Evaluation includes accuracy, confusion matrix, and ROC AUC metrics.
+
+
+
+
 
