@@ -22,7 +22,7 @@ To automatically classify MRI brain scans into four categories using deep learni
 
 ### 💡 Methodology
 1. **Dataset Preparation**
-   - Organized MRI scans into folders: `glioma/`, `meningioma/`, `pituitary/`, `no_tumor/`.
+   - Organized MRI scans inside the  into folders: `glioma/`, `meningioma/`, `pituitary/`, `no_tumor/`.
    - Split into training and testing sets.
    - Applied normalization and data augmentation (rotation, flip, zoom).
 
